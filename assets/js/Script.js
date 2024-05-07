@@ -1,3 +1,37 @@
+
+// Curseur 
+
+let cursor1 = document.querySelector('.cursor-1');
+let cursor2 = document.querySelector('.cursor-2');
+let cursor3 = document.querySelector('.cursor-3');
+let cursor4 = document.querySelector('.cursor-3');
+
+window.onmousemove = (e) =>{
+    cursor1.style.top = e.pageY + 'px';
+    cursor1.style.left = e.pageX + 'px';
+    cursor2.style.top = e.pageY + 'px';
+    cursor2.style.left = e.pageX + 'px';
+}
+
+document.querySelectorAll('a').forEach(links =>{
+
+    links.onmouseenter = () =>{
+        cursor1.classList.add('active');
+        cursor2.classList.add('active');
+    }
+
+    links.onmouseleave = () =>{
+        cursor1.classList.remove('active');
+        cursor2.classList.remove('active');
+    }
+
+});
+
+
+
+
+
+
 /*================= BARRE DE NAVIGATION ======================== */
 function myMenuFunction(){
   var menuBtn = document.getElementById("ma_nav_menu");
