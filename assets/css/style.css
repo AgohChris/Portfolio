@@ -473,12 +473,10 @@ h3{
     max-width: 400px;
 }
 
-.certification-box img {
+.certification-box iframe {
     border-radius: 10px;
     margin-bottom: 10px;
 }
-
-
 
 
 /* ----- CONTACT BOX ----- */
