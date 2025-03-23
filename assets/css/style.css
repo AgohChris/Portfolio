@@ -452,11 +452,10 @@ h3{
 }
 
 
-
 /* ----- SECTION CERTIFICATIONS ----- */
 .certification-container {
     display: flex;
-    justify-content: center; /* Centre les éléments horizontalement */
+    justify-content: center; /* Centre les certifications horizontalement */
     gap: 20px; /* Ajoute un espace entre les certifications */
     flex-wrap: wrap; /* Permet de passer à la ligne si l'espace est insuffisant */
     margin-top: 20px;
@@ -474,6 +473,10 @@ h3{
     max-width: 400px;
 }
 
+.certification-box img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
 
 
 
