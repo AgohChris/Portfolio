@@ -70,7 +70,8 @@ var EffetDeFrappe = new Typed(".typedText",{
   strings : ["Etudiant en Génie Logiciel", 
               "Aspirant Datascientist", 
               "Passioné par les Bases de Données", 
-              "Passioné par le Dev backend"
+              "Passioné par le Dev backend",
+              "& la CyberSécurité"
             ],
   loop : true,
   typeSpeed : 80, 
