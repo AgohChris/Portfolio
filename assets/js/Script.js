@@ -67,7 +67,11 @@ function headerShadow() {
 
 /* ----- EFFET DE FRAPPE ----- */
 var EffetDeFrappe = new Typed(".typedText",{
-  strings : ["Étudiant","Développeur"],
+  strings : ["Etudiant en Génie Logiciel", 
+              "Aspirant Datascientist", 
+              "Passioné par les Bases de Données", 
+              "Passioné par le Dev backend"
+            ],
   loop : true,
   typeSpeed : 80, 
   backSpeed : 80,
