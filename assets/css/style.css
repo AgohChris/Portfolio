@@ -606,6 +606,12 @@ footer{
 
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
 @media only screen and (max-width: 1024px){
+    .cursor-1{
+        display: none;
+    }
+    .cursor-2{
+        display: none;
+    }
     .featured-text{
         padding: 0;
     }
@@ -626,6 +632,12 @@ footer{
     }
     .nav-menu.responsive{
         left: 0;
+    }
+    .cursor-1{
+        display: none;
+    }
+    .cursor-2{
+        display: none;
     }
     .nav-menu{
         position: fixed;
@@ -701,6 +713,12 @@ footer{
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
 
 @media only screen and (max-width: 540px){
+    .cursor-1{
+        display: none;
+    }
+    .cursor-2{
+        display: none;
+    }
     .featured-name{
         font-size: 25px;
     }
