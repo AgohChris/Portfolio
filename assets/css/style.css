@@ -609,9 +609,17 @@ footer{
     .cursor-1{
         display: none;
     }
+        
+    .cursor-1.active{
+        display: none;
+    }
     .cursor-2{
         display: none;
     }
+    .cursor-2.active{
+        display: none;
+    }
+    
     .featured-text{
         padding: 0;
     }
@@ -636,7 +644,14 @@ footer{
     .cursor-1{
         display: none;
     }
+        
+    .cursor-1.active{
+        display: none;
+    }
     .cursor-2{
+        display: none;
+    }
+    .cursor-2.active{
         display: none;
     }
     .nav-menu{
@@ -716,7 +731,14 @@ footer{
     .cursor-1{
         display: none;
     }
+        
+    .cursor-1.active{
+        display: none;
+    }
     .cursor-2{
+        display: none;
+    }
+    .cursor-2.active{
         display: none;
     }
     .featured-name{
