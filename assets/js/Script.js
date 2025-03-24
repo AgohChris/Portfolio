@@ -71,12 +71,12 @@ var EffetDeFrappe = new Typed(".typedText",{
               "Aspirant Datascientist", 
               "Passioné par les Bases de Données", 
               "Passioné par le Dev backend",
-              "& la CyberSécurité",
+              "Passionné par la CyberSécurité",
             ],
   loop : true,
-  typeSpeed : 80, 
-  backSpeed : 80,
-  backDelay : 2000
+  typeSpeed : 60, 
+  backSpeed : 60,
+  backDelay : 1000
 });
 
 
