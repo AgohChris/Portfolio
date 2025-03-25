@@ -861,6 +861,9 @@ footer{
     .cursor-2.active{
         display: none;
     }
+    .col .about-info{
+        height: 370px;
+    }
     .featured-name{
         font-size: 25px;
     }
