@@ -722,6 +722,15 @@ footer{
 
 /* ----- MEDIA QUERY POUR LE FOOTER ----- */
 @media only screen and (max-width: 768px) {
+
+    .certification-container {
+        align-items: center;
+        justify-content: center; /* Centre les certifications horizontalement */
+        gap: 20px; /* Ajoute un espace entre les certifications */
+        flex-wrap: wrap; /* Permet de passer à la ligne si l'espace est insuffisant */
+        margin-top: 20px;
+    }
+
     .middle-footer .footer-menu {
         flex-direction: column; /* Les éléments passent en colonne */
         align-items: center; /* Centre les éléments */
