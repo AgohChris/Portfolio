@@ -68,15 +68,15 @@ function headerShadow() {
 /* ----- EFFET DE FRAPPE ----- */
 var EffetDeFrappe = new Typed(".typedText",{
   strings : ["Etudiant en Génie Logiciel", 
-              "Aspirant Datascientist", 
-              "Passioné par les Bases de Données", 
-              "Passioné par le Dev backend",
-              "Passionné par la CyberSécurité",
+              // "Aspirant Datascientist", 
+              // "Passioné par les Bases de Données", 
+              // "Passioné par le Dev backend",
+              // "Passionné par la CyberSécurité",
             ],
   loop : true,
-  typeSpeed : 60, 
-  backSpeed : 60,
-  backDelay : 1000
+  typeSpeed : 50, 
+  backSpeed : 50,
+  backDelay : 100
 });
 
 

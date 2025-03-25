@@ -376,37 +376,95 @@ h3{
     background: var(--text-color-third);
 }
 
-/* ----- ABOUT / competences BOX ----- */
-.competences-box{
-    margin: 10px;
+
+
+
+ /* ----- SECTION ABOUT ----- */
+#about .about-info {
+    padding: 30px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--text-color);
+    background: var(--color-white);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.competences-header{
-    margin-bottom: 30px;
+
+#about .about-highlights {
+    padding: 30px;
+    background: var(--color-white);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.competences-list{
+
+#about .about-highlights h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-color-second);
+    margin-bottom: 15px;
+}
+
+.highlights-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.highlights-list li {
+    font-size: 14px;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.highlights-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: var(--first-color);
+    font-size: 16px;
+    line-height: 1;
+}
+
+
+
+
+
+/* ----- SECTION COMPÉTENCES ----- */
+#skills .competences-box {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: var(--color-white);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#skills .competences-header h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-color-second);
+    margin-bottom: 10px;
+}
+
+#skills .competences-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 10px;
 }
-.competences-list span{
-    font-size: 14px;
+
+#skills .competences-list span {
     background: var(--first-color);
     color: var(--color-white);
-    padding: 2px 10px;
+    padding: 5px 10px;
     border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
 }
-.project-details {
-    display: none; /* Masquer les détails du projet par défaut */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 2;
-}
+
+
+
+
 
 
 .project-container {
@@ -450,6 +508,52 @@ h3{
 .project-box:hover .project-details {
     display: block; /* Afficher les détails du projet au survol de l'image */
 }
+
+
+
+/* ----- SECTION OBJECTIVES ----- */
+.objectives-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.objective-box {
+    background: var(--color-white);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.objective-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.objective-box i {
+    font-size: 40px;
+    color: var(--first-color);
+    margin-bottom: 10px;
+}
+
+.objective-box h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-color-second);
+    margin-bottom: 10px;
+}
+
+.objective-box p {
+    font-size: 14px;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
 
 
 /* ----- SECTION CERTIFICATIONS ----- */
@@ -634,7 +738,18 @@ footer{
 }
 
 /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
+
+    #about .about-info, #skills .competences-box {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #skills .competences-list {
+        justify-content: center;
+    }
+
+
     .nav-button{
         display: none;
     }
@@ -672,6 +787,7 @@ footer{
         flex-direction: column;
     }
     .nav-menu-btn{
+        
         display: flex;
         align-items: center;
         justify-content: center;
