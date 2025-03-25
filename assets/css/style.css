@@ -792,6 +792,10 @@ footer{
         align-items: center;
         justify-content: center;
     }
+
+    .col .about-info{
+        height: 260px;
+    }
     .featured-box{
         flex-direction: column;
         justify-content: center;
@@ -870,3 +874,5 @@ footer{
         width: 100%;
     }
 }
+
+
