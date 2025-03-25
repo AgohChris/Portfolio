@@ -25,6 +25,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+body{
+    width: 100%;
+}
 
 /* ----- SMOOTH SCROLL ----- */
 html{
@@ -116,8 +119,6 @@ body{
 .cursor-2.active{
     display: none;
 }
-
-
 
 
 
@@ -682,22 +683,27 @@ footer{
     font-size: 25px;
     font-weight: 600;
 }
-.middle-footer .footer-menu{
+
+.middle-footer .footer-menu {
     display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+    justify-content: center; /* Centre les éléments horizontalement */
+    gap: 20px; /* Ajoute un espace entre les éléments */
 }
+
 .footer_menu_list{
     list-style: none;
 }
-.footer_menu_list a{
+
+.footer_menu_list a {
     text-decoration: none;
     color: var(--text-color-second);
     font-weight: 500;
-    margin-inline: 20px;
+    margin-inline: 10px;
+    font-size: 14px;
 }
-.footer-social-icons{
-    display: flex;
-    gap: 30px;   
-}
+
+
 .bottom-footer{
     font-size: 14px;
     margin-top: 10px;
@@ -707,6 +713,35 @@ footer{
     color: #000;
 }
 
+/* ----- FOOTER SOCIAL ICONS ----- */
+.footer-social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+/* ----- MEDIA QUERY POUR LE FOOTER ----- */
+@media only screen and (max-width: 768px) {
+    .middle-footer .footer-menu {
+        flex-direction: column; /* Les éléments passent en colonne */
+        align-items: center; /* Centre les éléments */
+        gap: 15px; /* Réduit l'espace entre les éléments */
+    }
+
+    .footer_menu_list a {
+        font-size: 16px; /* Augmente légèrement la taille du texte pour une meilleure lisibilité */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .footer-social-icons {
+        flex-direction: column; /* Les icônes passent en colonne */
+        align-items: center;
+    }
+
+    .footer_menu_list a {
+        font-size: 14px; /* Réduit la taille du texte pour les très petits écrans */
+    }
+}
 
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
 @media only screen and (max-width: 1024px){
@@ -734,6 +769,12 @@ footer{
     }
      .typedText{
         font-size: 20px;
+    }
+}
+@media only screen and(max-width: 1349){
+    .btn{
+        font-size: 30px;
+        width: 130px;
     }
 }
 
@@ -848,6 +889,11 @@ footer{
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
 
 @media only screen and (max-width: 540px){
+
+    .container{
+       background-size: cover;
+    }
+
     .cursor-1{
         display: none;
     }
@@ -879,3 +925,9 @@ footer{
 }
 
 
+@media only screen and (max-width: 360px){
+    .col .about-info{
+        height: 390px;
+    }
+
+}
