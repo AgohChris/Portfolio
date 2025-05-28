@@ -1,4 +1,3 @@
-
 // Curseur 
 
 let cursor1 = document.querySelector('.cursor-1');
@@ -139,23 +138,9 @@ srRight.reveal('.form-control',{delay: 100})
 
 
 function afficherDetailsProjet(projectId) {
-  // Récupérer l'élément correspondant au projet
-  var projectDetails = document.getElementById(projectId);
-  
-  // Afficher les détails du projet pour le rendre visible
-  projectDetails.style.display = "block";
-  
-  //animation pour afficher les détails du projet toucher de la souris
-  projectDetails.classList.add("fadeIn"); 
-
-
-  // Masquer les autres détails de projets s'ils sont affichés
-  var allProjectDetails = document.querySelectorAll(".project-details");
-  allProjectDetails.forEach(function(detail) {
-      if (detail.id !== projectId) {
-          detail.style.display = "none";
-      }
-  });
+    var projectDetails = document.getElementById(projectId);
+    projectDetails.style.opacity = "1"; // Rendre visible
+    projectDetails.style.transition = "opacity 0.3s ease-in-out"; // Animation
 }
 
 

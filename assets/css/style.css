@@ -6,7 +6,8 @@
     --body-color: rgb(250, 250, 250);
     --color-white: rgb(255, 255, 255);
 
-    --text-color-second: rgb(68, 68, 68);
+    --text-color-second: rgba(68, 68, 68, 0.683);
+    --text-color-secondeC: rgb(255, 255, 255);
     --text-color-third: rgb(10, 18, 71);
 
     --first-color: rgb(23, 142, 220);
@@ -490,6 +491,21 @@ h3{
     overflow: hidden;
 }
 
+.project-details {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.project-box:hover .project-details {
+    opacity: 1; /* Affiche le texte au survol */
+}
+
 .project-overlay {
     position: absolute;
     top: 0;
@@ -510,7 +526,21 @@ h3{
     display: block; /* Afficher les détails du projet au survol de l'image */
 }
 
+.project-details .btn {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: var(--first-color);
+    color: var(--color-white);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
 
+.project-details .btn:hover {
+    background-color: var(--first-color-hover);
+}
 
 /* ----- SECTION OBJECTIVES ----- */
 .objectives-container {
@@ -545,7 +575,7 @@ h3{
 .objective-box h3 {
     font-size: 18px;
     font-weight: 600;
-    color: var(--text-color-second);
+    color: var(--text-color-secondC);
     margin-bottom: 10px;
 }
 
